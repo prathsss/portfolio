@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Prathsss0_0.</a>
+        <div class="nav-toggle">
+            <i class='bx bx-menu'></i> <!-- Hamburger icon from Boxicons -->
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" class="active">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h1>My Education</h1>
+        <ol>
+            <li>
+                <strong>Bachelor in Computer Application (BCA)</strong><br>
+                Tribhuvan University<br>
+                Semester: 3rd<br>
+                Currently studying Data Structures and Algorithms, Web Development
+            </li>
+            <li>
+                <strong>+2  Computer Science</strong><br>
+                Khwopa Secondary School<br>
+                Graduated: 2023<br>
+                Major: Computer Science, Mathematics, English, Financial Accounting, Business Studies<br>
+            </li>
+            <li>
+                <strong>Secondary Education Examination (SEE)</strong><br>
+                Evergreen English School<br>
+                Graduated: 2021<br>
+                General studies with a focus on science, mathematics and computer.
+            </li>
+        </ol>
+    </section>
+    <section class="footer">
+        <footer>
+            <div class="footer-content"></div>
+                <p>&copy; 2025 Prathu Maharjan. All rights reserved.</p>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/prathsss" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/prathsss0.0" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.linkedin.com/in/prathu-maharzan-ba8373294/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.instagram.com/prathsss0_0/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        // Hamburger menu toggle
+        document.addEventListener("DOMContentLoaded", function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navbar = document.querySelector('.navbar ul');
+            
+            // Toggle navigation visibility on small screens
+            navToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            });
+        });
+    
+        // Close menu when window is resized to large
+        window.addEventListener('resize', function() {
+            const navbar = document.querySelector('.navbar ul');
+            if (window.innerWidth > 768) {
+                navbar.classList.remove('active');
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
+</body>
+</html>

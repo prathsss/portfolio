@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathu Maharjan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Prathsss0_0.</a>
+        <div class="nav-toggle">
+            <i class='bx bx-menu'></i> <!-- Hamburger icon from Boxicons -->
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bars-animation">
+        <div class="bar" style="--i:7"></div>
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+<section class="home">
+    <div class="home-info">
+        <h1>Prathana Maharjan</h1>
+        <h2>I'm a
+            <span style="--i:4" data-text="Frontend Developer">Frontend Developer</span>
+            <span style="--i:3" data-text="Student">Student</span>
+            <span style="--i:2" data-text="Blogger">Blogger</span>
+            <span style="--i:1" data-text="Learner">Learner</span>
+        </h2>
+        <p>"Welcome to my portfolio! I’m Prathsss, aka Prathana Maharjan a Student, a passionate learner and a Developer 
+            dedicated in crafting impactful and innovative solutions.
+            With a keen eye for detail and a drive for creativity, 
+            I strive to bring ideas to life with precision and originality. 
+            Explore my work and let’s connect to create something amazing together!"</p>
+        <div class="btn-sci">
+            <a href="multimedia/resume.prathss.pdf" class="btn">Download CV</a>
+            <div class="sci">
+                <a href="https://github.com/prathsss" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.facebook.com/prathsss0.0" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.linkedin.com/in/prathu-maharzan-ba8373294/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.instagram.com/prathsss0_0/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="multimedia/Prathsss.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <footer>
+        <div class="footer-content"></div>
+            <p>&copy; 2025 Prathu Maharjan. All rights reserved.</p>
+            
+            <div class="footer-social">
+                <a href="https://github.com/prathsss" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/prathsss0.0" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.linkedin.com/in/prathu-maharzan-ba8373294/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.instagram.com/prathsss0_0/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+    </footer>
+</section>
+<script>
+    // Hamburger menu toggle
+    document.addEventListener("DOMContentLoaded", function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navbar = document.querySelector('.navbar ul');
+        
+        // Toggle navigation visibility on small screens
+        navToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    });
+
+    // Close menu when window is resized to large
+    window.addEventListener('resize', function() {
+        const navbar = document.querySelector('.navbar ul');
+        if (window.innerWidth > 768) {
+            navbar.classList.remove('active');
+        }
+    });
+</script>
+
+   
+</style>
+</body>
+</html>
